@@ -1,19 +1,18 @@
+import java.util.Date;
 
 public class Aluno {
 
 	private int id;
 	private String nome;
-	private String dataNasc;
-	private Turma turma;
+	private Date dataNasc;
 	private String serie;
 	
 	
-	public Aluno(int id, String nome, String dataNasc, Turma turma, String serie) {
+	public Aluno(int id, String nome, Date dataNasc, String serie) {
 		
 		this.id = id;
 		this.nome = nome;
 		this.dataNasc = dataNasc;
-		this.turma = turma;
 		this.serie = serie;
 	}
 
@@ -38,26 +37,16 @@ public class Aluno {
 	}
 
 
-	public String getDataNasc() {
+	public Date getDataNasc() {
 		return dataNasc;
 	}
 
 
-	public void setDataNasc(String dataNasc) {
+	public void setDataNasc(Date dataNasc) {
 		this.dataNasc = dataNasc;
 	}
 
-
-	public Turma getTurma() {
-		return turma;
-	}
-
-
-	public void setTurma(Turma turma) {
-		this.turma = turma;
-	}
-
-
+	
 	public String getSerie() {
 		return serie;
 	}
