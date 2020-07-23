@@ -1,12 +1,12 @@
+import java.util.List;
 
 public class Professor {
 
 	private String nome;
 	private String disciplina;
-	private Turma turma;
+	private List<Turma> turma;
 	
-	
-	public Professor(String nome, String disciplina, Turma turma) {
+	public Professor(String nome, String disciplina, List<Turma> turma) {
 		
 		this.nome = nome;
 		this.disciplina = disciplina;
@@ -35,15 +35,14 @@ public class Professor {
 	}
 
 
-	public Turma getTurma() {
+	public List<Turma> getTurma() {
 		return turma;
 	}
 
 
-	public void setTurma(Turma turma) {
+	public void setTurma(List<Turma> turma) {
 		this.turma = turma;
 	}
-	
 	
 	
 	
