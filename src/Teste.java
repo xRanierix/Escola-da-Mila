@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.sql.Connection;
+import db.DB;
 
 public class Teste {
 
+	
 	// threads/ assincrono <- processos que acontecem paralelamente
 	// sincrono <- processos que acontecem um apos o outro
 	public static void main(String[] args) {
@@ -24,6 +27,12 @@ public class Teste {
 		//adicionando alunos as turmas equivalentes
 		turma1.addFundamental(alunos);
 		turma2.addMedio(alunos);
+		
+		Connection conn = DB.getConnection();
+		DB.closeConnection();
+	
 	}
 
+	
+	
 }
