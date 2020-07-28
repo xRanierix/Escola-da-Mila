@@ -28,6 +28,7 @@ public class Teste {
 		turma1.addFundamental(alunos);
 		turma2.addMedio(alunos);
 		
+		//Testando Conexão como banco
 		Connection conn = DB.getConnection();
 		DB.closeConnection();
 	
